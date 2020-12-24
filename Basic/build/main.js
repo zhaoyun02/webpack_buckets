@@ -86,18 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/images/users.png":
-/*!******************************!*\
-  !*** ./src/images/users.png ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"cf214af2e68adec217586d01861c40ee.png\");\n\n//# sourceURL=webpack:///./src/images/users.png?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -106,7 +94,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_users_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/users.png */ \"./src/images/users.png\");\n\nconsole.log(\"hello webpack\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.less */ \"./src/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_0__);\n// import pic from \"./images/users.png\";\n// import \"./index.css\";\n\nconsole.log(\"good zhaoyun\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/index.less":
+/*!************************!*\
+  !*** ./src/index.less ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n        const tag = document.createElement('style');\n        tag.innerHTML = \"body {\\n  display: flex;\\n}\\nbody div {\\n  border: 2px solid purple;\\n}\\n\";\n        document.head.appendChild(tag);\n    \n\n//# sourceURL=webpack:///./src/index.less?");
 
 /***/ })
 
