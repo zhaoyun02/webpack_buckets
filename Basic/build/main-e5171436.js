@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.less */ \"./src/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_0__);\n// import pic from \"./images/users.png\";\n// import \"./index.css\";\n\nconsole.log(\"good zhaoyun\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.less */ \"./src/index.less\");\n// import pic from \"./images/users.png\";\n// import \"./index.css\";\n\n// console.log(\"hello webpack\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -102,10 +102,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
 /*!************************!*\
   !*** ./src/index.less ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n        const tag = document.createElement('style');\n        tag.innerHTML = \"body {\\n  display: flex;\\n}\\nbody div {\\n  border: 2px solid purple;\\n}\\n\";\n        document.head.appendChild(tag);\n    \n\n//# sourceURL=webpack:///./src/index.less?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/index.less?");
 
 /***/ })
 
