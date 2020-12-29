@@ -15,6 +15,17 @@ module.exports = {
   resolveLoader: {
     modules: ["node_modules", "./myLoaders"],
   },
+  devtool: "source-map",
+  devServer: {
+    contentBase: "./dist", //默认访问的地址(似乎不好用)
+    port: 8081,
+    open: true, // 自动打开浏览器
+    proxy: {
+      "/api": {
+        target: "http://localhost:9092",
+      },
+    },
+  },
   module: {
     rules: [
       // {
@@ -46,6 +57,27 @@ module.exports = {
           "postcss-loader",
           "less-loader",
         ],
+      },
+      {
+        test: /\.js$/,
+        use: {
+          loader: "babel-loader",
+          // options: {
+          //   presets: [
+          //     [
+          //       "@babel/preset-env",
+          //       {
+          //         targets: {
+          //           edge: "17",
+          //           chrome: "67",
+          //         },
+          //         corejs: 2, // 若使用3.x版本则需要额外安装 core-js/stable 3.x版本,bundle文件大了很多，还没优化好
+          //         useBuiltIns: "usage", //entry:需要在入口文件引入  usage ：不需要入口文件引入 false ：不按需加载
+          //       },
+          //     ],
+          //   ],
+          // },
+        },
       },
       // {
       //   test: /\.less$/,

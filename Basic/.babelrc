@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "edge": "17",
+          "chrome": "67"
+        },
+        "corejs": 2, // 若使用3.x版本则需要额外安装 core-js/stable 3.x版本,bundle文件大了很多，还没优化好
+        "useBuiltIns": "usage" //entry:需要在入口文件引入  usage ：不需要入口文件引入 false ：不按需加载
+      }
+    ],
+    "@babel/preset-react"
+    // @babel/preset-typescript 集成ts
+  ]
+}
+
+
+
+// vue-loader vue-template-compiler
+// https://vue-loader.vuejs.org/zh/guide/#vue-cli
+
+// 为啥没有react-loader? 可以开发不
