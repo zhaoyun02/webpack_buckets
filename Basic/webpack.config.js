@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const htmlwebpackplugin = require("html-webpack-plugin");
 const minicssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
+const txtwebpackplugin = require("./myPlugins/txt-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   //   output: "./dist",
@@ -80,5 +81,6 @@ module.exports = {
       filename: "css/[name]-[contentHash:8].css",
     }),
     new CleanWebpackPlugin(),
+    new txtwebpackplugin(),
   ],
 };
